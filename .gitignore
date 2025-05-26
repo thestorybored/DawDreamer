@@ -21,3 +21,42 @@ dist/*
 
 # vs code configuration
 .vscode/*
+
+# Development environment
+venv_dawdreamer/
+.venv/
+venv/
+*.egg-info/
+
+# Build artifacts
+Builds/MacOSX/build/
+Builds/LinuxMakefile/build/
+Builds/VisualStudio2022/build/
+*.dylib
+*.so
+tests/dawdreamer.so
+
+# Downloaded dependencies
+thirdparty/libfaust/darwin-*/
+thirdparty/libfaust/ubuntu-*/
+thirdparty/libfaust/win64/
+thirdparty/libfaust/*.dmg
+thirdparty/libfaust/*.exe
+thirdparty/libfaust/*.zip
+thirdparty/libsamplerate/build_release/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+tests/output/
+
+# Documentation builds
+docs/_build/
+docs/build/
+
+# IDE and editor files
+*.swp
+*.swo
+*~
+.vscode/settings.json

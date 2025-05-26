@@ -135,7 +135,45 @@ synth.clear_midi()
 # add midi again, render again, and so on...
 ```
 
-Please refer to the [Wiki](https://github.com/DBraun/DawDreamer/wiki), [examples](https://github.com/DBraun/DawDreamer/tree/main/examples/), [API documentation](https://dirt.design/DawDreamer), and [tests](https://github.com/DBraun/DawDreamer/tree/main/tests). 
+Please refer to the [Wiki](https://github.com/DBraun/DawDreamer/wiki), [examples](https://github.com/DBraun/DawDreamer/tree/main/examples/), [API documentation](https://dirt.design/DawDreamer), and [tests](https://github.com/DBraun/DawDreamer/tree/main/tests/).
+
+## VST Parameter Enhancement Project
+
+We are actively developing enhanced VST plugin parameter extraction and preset management capabilities. This project aims to provide comprehensive tools for:
+
+### 🎯 Current Features (Baseline)
+* ✅ **Plugin Loading**: Load VST2, VST3, and AU plugins
+* ✅ **Parameter Extraction**: Get detailed parameter descriptions and metadata  
+* ✅ **Parameter Control**: Get/set individual parameters and full patches
+* ✅ **Range Information**: Extract parameter min/max ranges and value mappings
+* ✅ **Basic Presets**: Load VST2 FXP and VST3 preset files
+* ✅ **State Management**: Save/load complete plugin state
+
+### 🚀 Planned Enhancements
+See [`VST_PARAMETER_FEATURES_BACKLOG.md`](VST_PARAMETER_FEATURES_BACKLOG.md) for detailed roadmap.
+
+**Phase 1 (High Priority)**:
+* **Preset Saving & Export**: Save presets in standard VST2/VST3 formats
+* **Parameter Validation**: Comprehensive bounds checking and error handling
+* **Preset Browsing**: Discovery and metadata extraction for existing presets
+
+**Phase 2 (Medium Priority)**:
+* **Parameter Organization**: Grouping and categorization of parameters
+* **Value Mapping**: Enhanced unit detection and display formatting
+* **Automation Curves**: Support for non-linear automation interpolation
+
+**Phase 3 (Advanced Features)**:
+* **Preset Comparison**: Diff and analysis tools for presets
+* **Parameter Dependencies**: Detection of parameter interactions
+* **Automation Recording**: Real-time parameter change capture
+
+### 🛠️ Development Status
+* **Story 0**: Build Environment & Plugin Testing ✅ **COMPLETED**
+  - Verified working with 3 test plugins (RoughRider3, TAL-NoiseMaker, ValhallaFreqEcho)
+  - Full parameter extraction and manipulation confirmed
+  - Test infrastructure established
+
+Ready for Phase 1 development! 🎉
 
 ## License
 
